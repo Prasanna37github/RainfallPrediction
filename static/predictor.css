@@ -1,0 +1,73 @@
+/* Body and Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Form Container */
+form {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+input[type="submit"],
+button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Columns if needed */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 0 0 48%;
+}

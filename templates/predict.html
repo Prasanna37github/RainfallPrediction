@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainfall Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predictor.css') }}">
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <h1>Rainfall Prediction</h1>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="mintemp">Minimum Temperature (°C)</label>
+                <input type="text" name="mintemp" required>
+            </div>
+            <div class="form-group">
+                <label for="maxtemp">Maximum Temperature (°C)</label>
+                <input type="text" name="maxtemp" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="rainfall">Rainfall (mm)</label>
+                <input type="text" name="rainfall" required>
+            </div>
+            <div class="form-group">
+                <label for="windgustspeed">Wind Gust Speed (km/h)</label>
+                <input type="text" name="windgustspeed" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="windspeed9am">Wind Speed 9am (km/h)</label>
+                <input type="text" name="windspeed9am" required>
+            </div>
+            <div class="form-group">
+                <label for="windspeed3pm">Wind Speed 3pm (km/h)</label>
+                <input type="text" name="windspeed3pm" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="humidity9am">Humidity 9am (%)</label>
+                <input type="text" name="humidity9am" required>
+            </div>
+            <div class="form-group">
+                <label for="humidity3pm">Humidity 3pm (%)</label>
+                <input type="text" name="humidity3pm" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="pressure9am">Pressure 9am (hPa)</label>
+                <input type="text" name="pressure9am" required>
+            </div>
+            <div class="form-group">
+                <label for="pressure3pm">Pressure 3pm (hPa)</label>
+                <input type="text" name="pressure3pm" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="temp9am">Temperature 9am (°C)</label>
+                <input type="text" name="temp9am" required>
+            </div>
+            <div class="form-group">
+                <label for="temp3pm">Temperature 3pm (°C)</label>
+                <input type="text" name="temp3pm" required>
+            </div>
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
